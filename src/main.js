@@ -2,6 +2,8 @@ const box = document.querySelector(".box");
 const box1 = document.querySelector(".box1");
 const pTeg = document.querySelector(".box1 p");
 const heading = document.querySelector(".box h1");
+const noti = document.querySelector("#Notification");
+let notificationSound = new Audio("/strange-notification-36458.mp3");
 
 setInterval(() => {
   timerFunction();
@@ -19,6 +21,8 @@ const timerFunction = () => {
     date.getHours() > 12 ? "<span> PM </span>" : "<span> AM </span>"
   }
    `;
+  notificationSound.play();
+  noti.play();
 };
 const monthList = [
   "January",
