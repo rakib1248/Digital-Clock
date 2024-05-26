@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "clock";
+  src: url("./Digital\ Dismay.otf");
+}
+ body{
+    background-image: url(./sky_1600x290.jpg);
+ }
+
+
+h1 {
+  font-family: "clock";
+}
+.box {
+  & h1 {
+    font-size: 10vi;
+    & span {
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+}
+
+.box1 p {
+    font-size: 2vi;
+    font-weight: bold;
+}
